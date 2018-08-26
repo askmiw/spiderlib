@@ -1,36 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.miw</groupId>
-	<artifactId>spider</artifactId>
+	<artifactId>spiderlib</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 	<name>SpiderLib</name>
-	<description>spiderlib</description>
-	<url>http://www.miw.cn/</url>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
-	<developers>
-		<developer>
-			<name>mrzhou</name>
-			<email>hello@miw.cn</email>
-		</developer>
-	</developers>
-	<scm>
-		<connection>scm:git:https://github.com/askmiw/spiderlib.git</connection>
-		<developerConnection>scm:git:https://github.com/askmiw/spiderlib.git</developerConnection>
-		<url>https://github.com/askmiw/spiderlib.git</url>
-	</scm>
-
+	<description />
 	<properties>
 		<webVersion>3.1</webVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.version>2.3.2</maven.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -59,7 +38,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven.version}</version>
+				<version>2.3.2</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -74,28 +53,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<profiles>
-		<profile>
-			<id>release</id>
-			<properties>
-				<gpg.executable>gpg</gpg.executable>
-				<gpg.passphrase>www.miw.cn</gpg.passphrase>
-			</properties>
-			<build>
-				
-			</build>
-			<distributionManagement>
-				<snapshotRepository>
-					<id>oss</id>
-					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-				</snapshotRepository>
-				<repository>
-					<id>oss</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
-		</profile>
-	</profiles>
-
 </project>
