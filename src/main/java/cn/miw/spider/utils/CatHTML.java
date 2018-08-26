@@ -24,11 +24,11 @@ public class CatHTML implements ICatTask{
 		return this;
 	}
 	
-	public static void main(String[] args) throws IOException {
-		new CatHTML("云南慈善", 1, 1, 1, 5000, "http://w.m.miw.cn/pro", ".item ul",
-				new AttDef[] { new AttDef("img:eq(0)", "abs:src", false, "img"), new AttDef("h3.proName", "", true, "name") })
-						.enaleJS().start(new SaveData());
-	}
+//	public static void main(String[] args) throws IOException {
+//		new CatHTML("云南慈善", 1, 1, 1, 5000, "http://w.m.miw.cn/pro", ".item ul",
+//				new AttDef[] { new AttDef("img:eq(0)", "abs:src", false, "img"), new AttDef("h3.proName", "", true, "name") })
+//						.enaleJS().start(new SaveData());
+//	}
 
 	public CatHTML(Object flag, long page, long fin, int step, int delay, String url, String listSelector,
 			AttDef[] attrs) {

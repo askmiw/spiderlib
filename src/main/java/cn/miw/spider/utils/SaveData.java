@@ -16,9 +16,9 @@ public class SaveData implements ICatCallBack {
 		System.out.println(flag+"=="+pages+"==="+count);
 	}
 
-	public static void main(String[] args) {
-		ICatTask task = new CatHTML("", 0, 100, 1, 5000, "", "", null);
-		task = new CatJSON("", 0, 100, 1, 5000, "", "", null);
-		task.start(new SaveData());
-	}
+//	public static void main(String[] args) {
+//		ICatTask task = new CatHTML("", 0, 100, 1, 5000, "", "", null);
+//		task = new CatJSON("", 0, 100, 1, 5000, "", "", null);
+//		task.start(new SaveData());
+//	}
 }
